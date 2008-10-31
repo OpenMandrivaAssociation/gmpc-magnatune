@@ -41,7 +41,7 @@ cover art.
 %files
 %defattr(-,root,root)
 %dir %{_datadir}/gmpc/plugins/magnatune
-%{_datadir}/gmpc/plugins/magnatuneplugin.la
-%{_datadir}/gmpc/plugins/magnatuneplugin.so
+%{_libdir}/gmpc/plugins/magnatuneplugin.la
+%{_libdir}/gmpc/plugins/magnatuneplugin.so
 %{_datadir}/gmpc/plugins/magnatune/magnatune.png
 %{_datadir}/gmpc/plugins/magnatune/xdg-open
