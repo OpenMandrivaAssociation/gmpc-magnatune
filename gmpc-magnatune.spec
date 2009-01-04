@@ -1,7 +1,7 @@
 Summary:	A magnatune browser plugin for gmpc
 Name:		gmpc-magnatune
 Version:	0.17.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Sound
 Url:		http://www.sarine.nl//gmpc-plugins-magnatune
@@ -34,10 +34,6 @@ cover art.
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %makeinstall_std
-
-%if "%_libdir" != "%_prefix/lib"
-mv %buildroot%_prefix/lib %buildroot%_libdir
-%endif
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
