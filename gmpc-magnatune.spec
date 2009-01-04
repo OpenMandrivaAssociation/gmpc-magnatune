@@ -1,6 +1,6 @@
 Summary:	A magnatune browser plugin for gmpc
 Name:		gmpc-magnatune
-Version:	0.16.0
+Version:	0.17.0
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
