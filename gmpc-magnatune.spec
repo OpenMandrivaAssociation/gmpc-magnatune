@@ -1,15 +1,16 @@
 Summary:	A magnatune browser plugin for gmpc
 Name:		gmpc-magnatune
-Version:	0.17.0
-Release:	%mkrel 2
+Version:	0.18.0
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Sound
 Url:		http://www.sarine.nl//gmpc-plugins-magnatune
-Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.bz2
-BuildRequires:	libmpd-devel
-BuildRequires:	libxml2-devel
+Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.gz
+BuildRequires:	libmpd-devel >= 0.15.98
 BuildRequires:	libglade2.0-devel
-BuildRequires:	gmpc-devel
+BuildRequires:	gtk+2-devel >= 2.4
+BuildRequires:	gmpc-devel >= 0.18.0
+BuildRequires:	sqlite3-devel
 Requires:	gmpc
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
@@ -27,12 +28,10 @@ cover art.
 
 %build
 %configure2_5x
-
 %make
 
 %install
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 %makeinstall_std
 
 %clean
@@ -44,4 +43,3 @@ cover art.
 %{_libdir}/gmpc/plugins/magnatuneplugin.la
 %{_libdir}/gmpc/plugins/magnatuneplugin.so
 %{_datadir}/gmpc/plugins/magnatune/magnatune.png
-%{_datadir}/gmpc/plugins/magnatune/xdg-open
