@@ -1,11 +1,11 @@
 Summary:	A magnatune browser plugin for gmpc
 Name:		gmpc-magnatune
-Version:	0.20.0
-Release:	3
+Version:	11.8.16
+Release:	1
 License:	GPLv2+
 Group:		Sound
 Url:		http://www.sarine.nl//gmpc-plugins-magnatune
-Source0:	http://download.sarine.nl/Programs/gmpc/%{version}/%{name}-%{version}.tar.gz
+Source0:	http://download.sarine.nl/Programs/gmpc/11.8.16/%{name}-%{version}.tar.gz
 BuildRequires:	libmpd-devel >= 0.15.98
 BuildRequires:	libglade2.0-devel
 BuildRequires:	gtk+2-devel >= 2.4
@@ -79,4 +79,5 @@ cover art.
 - add spec file
 - add source
 - Created package structure for gmpc-magnatune.
+
 

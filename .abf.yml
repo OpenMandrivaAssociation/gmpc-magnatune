@@ -1,2 +1,4 @@
+removed_sources:
+  gmpc-magnatune-0.20.0.tar.gz: f0363aab8f8c18a741da4e009ed880125be86a1c
 sources:
-  "gmpc-magnatune-0.20.0.tar.gz": f0363aab8f8c18a741da4e009ed880125be86a1c
+  gmpc-magnatune-11.8.16.tar.gz: 77df7b82fb8aa939a61b7b4d5a40d8a6c24d9e8f
