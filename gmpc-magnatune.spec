@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		Sound
 Url:		http://www.sarine.nl//gmpc-plugins-magnatune
 Source0:	http://download.sarine.nl/Programs/gmpc/11.8.16/%{name}-%{version}.tar.gz
-BuildRequires:	libmpd-devel >= 0.15.98
+BuildRequires:	pkgconfig(libmpd) >= 0.15.98
 BuildRequires:	libglade2.0-devel
 BuildRequires:	gtk+2-devel >= 2.4
 BuildRequires:	gmpc-devel >= 0.18.0
